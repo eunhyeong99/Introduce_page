@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>안예환 - 상세정보</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+
+        * {
+            font-family: "Noto Sans KR";
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+            flex-wrap: wrap;
+        }
+
+        .left {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .left img {
+            border-radius: 10%;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .logo {
+            margin-top: 30px;
+        }
+
+        .right {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .intro {
+            margin: 10px 0;
+            width: 100%;
+            height: auto;
+            border-radius: 5%;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        .intro p {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="https://i.namu.wiki/i/IkjZVcZitj6At3VCjl8HKz7DFLXUdPr822fjjrhtlJbCvt-Kd00P553-ehajE_iWKeRWtI-MgwaLGXJzkPy286I2nODKCQmUwg2cNe_4kk58MdglwimdJ8nsSBU2MpleXBswVG10TrsCkP2raO2tSg.webp" />
+            <div class="logo">
+                <a href="https://github.com">
+                    <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
+                        style="width: 30px; height: 30px; border-radius: 80%" /></a>
+                <a href="https://linkedin.com">
+                    <img src="https://i.namu.wiki/i/Qt57TadAbmQflaDC7E6cC9uBKDgZWEqN4r2LyYVXidRZur96HZmTrIGbOhpv__vE16BfZnjYS0b57MIzbsPX5bfLUEk0Af3u53QOHotVesPXApQbJRTX0trRSjEcJjrDKYICKG4EY0gFHMjCZlji8w.svg"
+                        style="width: 30px; height: 30px; border-radius: 80%; margin-left: 10px;" /></a>
+            </div>
+        </div>
+        <div class="right">
+            <div class="intro">
+                <h2>[안예환]에 대한 설명</h2>
+                <p>
+                    이름: 안예환 <br />
+                    MBTI: ENFP <br />
+                    TMI: 잘 부탁드립니다 파이팅! <br />
+                    한마디: 잘 부탁드립니다 파이팅!
+                </p>
+            </div>
+            <div class="intro">
+                <h2>객관적으로 살펴본 자신의 장점</h2>
+                <p>내 장점은 활발하고 사교적이며 창의성이 뛰어나다는 것입니다. 사람들과 쉽게 어울리고 새로운 아이디어를 제안하는 능력이 있습니다.</p>
+            </div>
+            <div class="intro">
+                <h2>자신의 협업 스타일 소개</h2>
+                <p>내 협업 스타일은 열정적이고 유연하며 팀원들과의 협력을 통해 최상의 결과를 도출해냅니다. 항상 긍정적인 마인드로 임합니다.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        // JavaScript 예제
+        document.addEventListener("DOMContentLoaded", function () {
+            // 이미지 클릭 시 콘솔에 메시지 출력
+            document.querySelector(".left img").addEventListener("click", function () {
+                console.log("이미지가 클릭되었습니다.");
+            });
+
+            // 링크 클릭 시 경고창 출력
+            document.querySelectorAll(".logo a").forEach(function (link) {
+                link.addEventListener("click", function (event) {
+                    event.preventDefault(); // 링크 기본 동작 방지
+                    window.location.href = "https://velog.io/@davidan94/posts";
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

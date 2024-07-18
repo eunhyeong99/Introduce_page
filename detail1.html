@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>detail</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+
+        * {
+            font-family: "Noto Sans KR";
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+            flex-wrap: wrap; /* 추가된 부분 */
+        }
+
+        .left {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px; /* 수정된 부분 */
+            box-sizing: border-box; /* 추가된 부분 */
+        }
+
+        .left img {
+            border-radius: 10%;
+            max-width: 100%; /* 추가된 부분 */
+            height: auto; /* 추가된 부분 */
+        }
+
+        .logo {
+            margin-top: 30px;
+        }
+
+        .right {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px; /* 수정된 부분 */
+            box-sizing: border-box; /* 추가된 부분 */
+        }
+
+        .intro {
+            margin: 10px 0;
+            width: 100%;
+            height: auto; /* 수정된 부분 */
+            border-radius: 5%;
+            box-sizing: border-box; /* 추가된 부분 */
+            padding: 10px; /* 추가된 부분 */
+        }
+
+        .intro p {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="https://upload.wikimedia.org/wikipedia/ko/4/4a/%EC%8B%A0%EC%A7%B1%EA%B5%AC.png" />
+            <div class="logo">
+                <a href="https://github.com">
+                    <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
+                        style="width: 30px; height: 30px; border-radius: 80%" /></a>
+                <a href="https://eunhy1224.tistory.com/">
+                    <img src="https://i.namu.wiki/i/Qt57TadAbmQflaDC7E6cC9uBKDgZWEqN4r2LyYVXidRZur96HZmTrIGbOhpv__vE16BfZnjYS0b57MIzbsPX5bfLUEk0Af3u53QOHotVesPXApQbJRTX0trRSjEcJjrDKYICKG4EY0gFHMjCZlji8w.svg"
+                        style="width: 30px; height: 30px; border-radius: 80%; margin-left: 10px;" /></a>
+            </div>
+        </div>
+        <div class="right">
+            <div class="intro">
+                <h2>[조은형]에 대한 설명</h2>
+                <p>
+                    이름: 조은형 <br />
+                    MBTI: ENTJ <br />
+                    TMI: 끝까지 최선을 다하겠습니다. <br />
+                    한마디: 끝까지 최선을 다하겠습니다.
+                </p>
+            </div>
+            <div class="intro">
+                <h2>객관적으로 살펴본 자신의 장점</h2>
+                <p>내 장점은 리더십과 결단력이면 프로젝트를 성공적으로 이끌 수 있습니다.</p>
+            </div>
+            <div class="intro">
+                <h2>자신의 협업 스타일 소개</h2>
+                <p>내 협업 스타일은 체계적이고 목표 지향적이어서 명확한 목표 설정과 실행 계획을 통해 효율적으로 협업할 수 있습니다.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        // JavaScript 예제
+        document.addEventListener("DOMContentLoaded", function () {
+            // 이미지 클릭 시 콘솔에 메시지 출력
+            document.querySelector(".left img").addEventListener("click", function () {
+                console.log("이미지가 클릭되었습니다.");
+            });
+
+            // 링크 클릭 시 경고창 출력
+            document.querySelectorAll(".logo a").forEach(function (link) {
+                link.addEventListener("click", function (event) {
+                    event.preventDefault(); // 링크 기본 동작 방지
+                    window.location.href = "https://eunhy1224.tistory.com/";
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
